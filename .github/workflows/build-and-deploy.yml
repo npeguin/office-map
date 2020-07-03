@@ -28,12 +28,10 @@ jobs:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #          BRANCH: gh-pages # The branch the action should deploy to.
 #          FOLDER: . # The folder the action should deploy.
-      -
-        name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+
+      - name: Publish generated content to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
         with:
-          target_branch: gh-pages
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          dir: dist
+          branch: gh-pages
+          token: ${{ secrets.ACCESS_TOKEN }}
