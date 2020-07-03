@@ -22,6 +22,8 @@ jobs:
       - name: Bash
         run: |
           ls -al
+          git config --global user.email "d.negrier@thecodingmachine.com"
+          git config --global user.name "David Négrier"
           git commit -am "Adding files"
 
 #      - name: Deploy
