@@ -20,7 +20,9 @@ jobs:
         uses: thecodingmachine/map-optimizer-action@master
 
       - name: Bash
-        run: ls -al
+        run: |
+          ls -al
+          git commit -am "Adding files"
 
 #      - name: Deploy
 #        uses: JamesIves/github-pages-deploy-action@releases/v3
