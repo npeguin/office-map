@@ -21,7 +21,8 @@ jobs:
 
       - name: Bash
         uses: jdickey/bash@master
-        args: ["ls -al"]
+        with:
+          args: ["ls -al"]
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
