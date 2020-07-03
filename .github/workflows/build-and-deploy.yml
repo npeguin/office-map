@@ -20,9 +20,7 @@ jobs:
         uses: thecodingmachine/map-optimizer-action@master
 
       - name: Bash
-        uses: jdickey/bash@master
-        with:
-          args: ["ls -al"]
+        run: ls -al
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
