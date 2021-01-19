@@ -73,7 +73,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/corridor-map\/map.json#front_of_office"
+                 "value":"https:\/\/npeguin.github.io\/corridor-map\/map.json#front_of_office"
                 }],
          "type":"tilelayer",
          "visible":true,
